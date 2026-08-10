@@ -1,0 +1,11 @@
+{
+  "piattoDelGiorno": {
+    "attivo": false,
+    "nome": "",
+    "descrizione": ""
+  },
+  "avviso": {
+    "attivo": false,
+    "testo": ""
+  }
+}

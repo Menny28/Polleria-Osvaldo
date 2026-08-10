@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Polleria — Pollo arrosto e allo spiedo</title>
+  <link rel="icon" href="images/logo.png">
+
+  <meta property="og:title" content="La Polleria — Pollo arrosto e allo spiedo">
+  <meta property="og:description" content="Pollo arrosto e allo spiedo cotto sul fuoco vivo. Asporto, tavoli senza prenotazione e consegna a domicilio. Via P. Sterzi 41.">
+  <meta property="og:image" content="images/pollo-spiedo.jpeg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Barra contatti sempre visibile -->
+  <aside class="info-bar">
+    <div class="logo-badge">
+      <img src="images/logo.png" alt="La Polleria" class="info-logo">
+    </div>
+
+    <a href="tel:+393665488260" class="info-item">
+      <svg viewBox="0 0 24 24" class="info-icon"><path d="M6.6 10.8c1.4 2.8 3.7 5.1 6.5 6.5l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.3 0 .7-.2 1z"/></svg>
+      <span>+39 366 548 8260</span>
+    </a>
+
+    <div class="info-item">
+      <svg viewBox="0 0 24 24" class="info-icon"><path d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 110-6 3 3 0 010 6z"/></svg>
+      <span>Via P. Sterzi 41</span>
+    </div>
+
+    <div class="info-item info-hours">
+      <svg viewBox="0 0 24 24" class="info-icon"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 10.4l4 2.4-.8 1.3-4.6-2.8V6h1.4v6.4z"/></svg>
+      <span>Tutti i giorni 10:00&ndash;19:00<br><em>chiuso il martedì</em></span>
+    </div>
+
+    <a href="tel:+393665488260" class="btn btn-primary info-cta">Chiama ora</a>
+    <a href="https://wa.me/393665488260" target="_blank" rel="noopener" class="btn btn-whatsapp">
+      <svg viewBox="0 0 24 24" class="info-icon whatsapp-icon"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.3c1.5.8 3.1 1.3 4.8 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3C4 14.7 3.6 13.4 3.6 12c0-4.6 3.8-8.4 8.4-8.4s8.4 3.8 8.4 8.4-3.8 8.4-8.4 8.4zm4.6-6.3c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-1 1-1 2.3s1 2.7 1.1 2.9c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.5-.3z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+  </aside>
+
+  <nav class="site-nav">
+    <a href="#menu">Vedi il menù</a>
+    <a href="#negozio">Negozio</a>
+    <a href="#servizi">Come funziona</a>
+    <a href="#contatti">Come ordinare</a>
+    <a href="#contatti">Dove siamo</a>
+  </nav>
+
+  <div class="page">
+
+    <div id="closed-banner" class="closed-banner" hidden>
+      <svg viewBox="0 0 24 24" class="closed-icon"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 10.4l4 2.4-.8 1.3-4.6-2.8V6h1.4v6.4z"/></svg>
+      <span>Oggi siamo chiusi &mdash; riapriamo domani alle 10:00.</span>
+    </div>
+
+    <div id="avviso-banner" class="avviso-banner" hidden>
+      <svg viewBox="0 0 24 24" class="closed-icon"><path d="M12 2L1 21h22L12 2zm0 4.5L19.5 19h-15L12 6.5zM11 10v4h2v-4h-2zm0 6v2h2v-2h-2z"/></svg>
+      <span></span>
+    </div>
+
+    <header class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <div class="logo-badge logo-badge-hero">
+            <img src="images/logo.png" alt="La Polleria" class="hero-logo">
+          </div>
+          <h1>Pollo arrosto e allo spiedo,<br>ogni giorno.</h1>
+          <p class="hero-sub">Cotto lento sul fuoco vivo, come una volta. Da asporto, al tavolo o a casa tua.</p>
+        </div>
+        <div class="hero-photo">
+          <img src="images/pollo-spiedo.jpeg" alt="Pollo allo spiedo sulla brace">
+        </div>
+      </div>
+    </header>
+
+    <div class="skewer-divider" aria-hidden="true">
+      <svg viewBox="0 0 400 24" preserveAspectRatio="none">
+        <line x1="0" y1="12" x2="400" y2="12" class="skewer-rod"></line>
+        <circle cx="60" cy="12" r="9" class="skewer-piece piece-a"></circle>
+        <circle cx="140" cy="12" r="10" class="skewer-piece piece-b"></circle>
+        <circle cx="220" cy="12" r="9" class="skewer-piece piece-a"></circle>
+        <circle cx="300" cy="12" r="10" class="skewer-piece piece-b"></circle>
+        <circle cx="370" cy="12" r="8" class="skewer-piece piece-a"></circle>
+      </svg>
+    </div>
+
+    <main>
+
+      <div id="piatto-giorno" class="piatto-giorno" hidden>
+        <span class="piatto-giorno-label">Piatto del giorno</span>
+        <h3 id="piatto-giorno-nome"></h3>
+        <p id="piatto-giorno-desc"></p>
+      </div>
+
+      <section id="menu" class="section">
+        <h2>Il menù</h2>
+
+        <h3 class="menu-category">Tradizionale</h3>
+        <div class="menu-grid">
+          <div class="menu-item menu-item-photo">
+            <img src="images/menu-pollo-spiedo.jpg" alt="Pollo allo spiedo">
+            <div class="menu-item-body">
+              <h4>Pollo allo spiedo <span>intero / metà</span></h4>
+              <p>Cottura lenta e rotazione continua sul fuoco.</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h4>Pollo arrosto <span>intero / metà</span></h4>
+              <p>Marinato nelle nostre erbe, cotto al forno.</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="menu-category">Fritti</h3>
+        <div class="menu-grid">
+          <div class="menu-item menu-item-photo">
+            <img src="images/menu-nuggets.jpg" alt="Nuggets di pollo">
+            <div class="menu-item-body">
+              <h4>Nuggets di pollo</h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h4>Crispy fried chicken</h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h4>Cotoletta</h4>
+            </div>
+          </div>
+          <div class="menu-item menu-item-photo">
+            <img src="images/menu-alette.jpg" alt="Alette di pollo in salsa">
+            <div class="menu-item-body">
+              <h4>Alette in salsa</h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h4>Alette piccanti</h4>
+            </div>
+          </div>
+          <div class="menu-item menu-item-photo">
+            <img src="images/menu-onion-rings.jpg" alt="Onion rings">
+            <div class="menu-item-body">
+              <h4>Onion rings</h4>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="menu-category">Panini</h3>
+        <div class="menu-grid">
+          <div class="menu-item menu-item-photo">
+            <img src="images/menu-panino.jpg" alt="Panino Apollo">
+            <div class="menu-item-body">
+              <h4>Apollo</h4>
+              <p>Cotoletta di pollo, peperoni, insalata, salsa della casa.</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h4>Joker</h4>
+              <p>Straccetti di pollo, anelli di cipolla, cheddar, pomodoro, insalata, salsa barbecue.</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="menu-category">Contorni</h3>
+        <div class="menu-grid">
+          <div class="menu-item menu-item-photo">
+            <img src="images/menu-patate.jpg" alt="Patate al forno">
+            <div class="menu-item-body">
+              <h4>Patate al forno</h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h4>Patatine fritte</h4>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h4>Anelli di cipolla</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-footer">
+          <p class="menu-note">Il menù può variare leggermente in base alla giornata e alla disponibilità.</p>
+          <a href="menu-la-polleria.pdf" class="btn btn-ghost-dark" download>Scarica il menù in PDF</a>
+        </div>
+      </section>
+
+      <div class="skewer-divider" aria-hidden="true">
+        <svg viewBox="0 0 400 24" preserveAspectRatio="none">
+          <line x1="0" y1="12" x2="400" y2="12" class="skewer-rod"></line>
+          <circle cx="60" cy="12" r="9" class="skewer-piece piece-b"></circle>
+          <circle cx="140" cy="12" r="10" class="skewer-piece piece-a"></circle>
+          <circle cx="220" cy="12" r="9" class="skewer-piece piece-b"></circle>
+          <circle cx="300" cy="12" r="10" class="skewer-piece piece-a"></circle>
+          <circle cx="370" cy="12" r="8" class="skewer-piece piece-b"></circle>
+        </svg>
+      </div>
+
+      <section class="section">
+        <h2>Perché sceglierci</h2>
+        <div class="features features-light">
+          <div class="feature">
+            <span class="feature-mark">Fuoco vero</span>
+            <p>Niente forni elettrici: cuociamo su brace viva, ogni giorno.</p>
+          </div>
+          <div class="feature">
+            <span class="feature-mark">Marinatura curata</span>
+            <p>Erbe e aromi selezionati, per un sapore che si riconosce.</p>
+          </div>
+          <div class="feature">
+            <span class="feature-mark">Sempre fresco</span>
+            <p>Cotture scaglionate durante il giorno, mai pollo fermo in vetrina.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="negozio" class="section negozio">
+        <div class="negozio-grid">
+          <img src="images/negozio.jpg" alt="Interno del negozio La Polleria, rinnovato" class="negozio-photo">
+          <div class="negozio-text">
+            <h2>Il nostro negozio</h2>
+            <p>Uno spazio nuovo, pensato per accogliere chi passa a trovarci: pulito, curato nei dettagli, con la stessa qualità di sempre nel piatto.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="skewer-divider" aria-hidden="true">
+        <svg viewBox="0 0 400 24" preserveAspectRatio="none">
+          <line x1="0" y1="12" x2="400" y2="12" class="skewer-rod"></line>
+          <circle cx="60" cy="12" r="9" class="skewer-piece piece-a"></circle>
+          <circle cx="140" cy="12" r="10" class="skewer-piece piece-b"></circle>
+          <circle cx="220" cy="12" r="9" class="skewer-piece piece-a"></circle>
+          <circle cx="300" cy="12" r="10" class="skewer-piece piece-b"></circle>
+          <circle cx="370" cy="12" r="8" class="skewer-piece piece-a"></circle>
+        </svg>
+      </div>
+
+      <section id="servizi" class="section section-dark">
+        <h2>Come funziona</h2>
+        <div class="features">
+          <div class="feature">
+            <span class="feature-mark">Asporto</span>
+            <p>Passa a ritirare il tuo ordine, pronto quando dici tu.</p>
+          </div>
+          <div class="feature">
+            <span class="feature-mark">Tavoli</span>
+            <p>Qualche tavolino disponibile sul posto, senza prenotazione.</p>
+          </div>
+          <div class="feature">
+            <span class="feature-mark">A domicilio</span>
+            <p>Consegniamo in paese e nelle zone vicine (+1,50 € sulla consegna).</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contatti" class="section">
+        <h2>Dove siamo</h2>
+        <div class="contatti-grid">
+          <p><strong>Indirizzo</strong><br>Via P. Sterzi 41</p>
+          <p><strong>Telefono</strong><br><a href="tel:+393665488260">+39 366 548 8260</a></p>
+          <p><strong>Orari</strong><br>Tutti i giorni 10:00&ndash;19:00, chiuso il martedì</p>
+        </div>
+        <div class="map-embed">
+          <iframe
+            src="https://www.google.com/maps?q=Via+P.+Sterzi+41&output=embed"
+            width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2026 La Polleria</p>
+    </footer>
+
+  </div>
+
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+
+  <script>
+    (function () {
+      var banner = document.getElementById('closed-banner');
+      var textEl = banner.querySelector('span');
+      var now = new Date();
+      var day = now.getDay();   // 0 domenica ... 1 lunedì, 2 martedì ...
+      var hour = now.getHours();
+      var msg = null;
+
+      if (day === 2) {
+        // Tutto il martedì è chiuso: il giorno dopo (mercoledì) è aperto
+        msg = 'Oggi siamo chiusi \u2014 riapriamo domani alle 10:00.';
+      } else if (hour >= 19) {
+        // Chiusi per oggi: se è lunedì sera, domani (martedì) è chiuso -> si riapre mercoledì
+        msg = (day === 1)
+          ? 'Siamo chiusi \u2014 riapriamo mercoledì alle 10:00.'
+          : 'Siamo chiusi \u2014 riapriamo domani alle 10:00.';
+      } else if (hour < 10) {
+        msg = 'Siamo chiusi \u2014 apriamo oggi alle 10:00.';
+      }
+
+      if (msg) {
+        textEl.textContent = msg;
+        banner.hidden = false;
+      }
+    })();
+  </script>
+
+  <script>
+    fetch('data/site-data.json')
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        if (data.avviso && data.avviso.attivo && data.avviso.testo) {
+          var b = document.getElementById('avviso-banner');
+          b.querySelector('span').textContent = data.avviso.testo;
+          b.hidden = false;
+        }
+        if (data.piattoDelGiorno && data.piattoDelGiorno.attivo) {
+          document.getElementById('piatto-giorno-nome').textContent = data.piattoDelGiorno.nome || '';
+          document.getElementById('piatto-giorno-desc').textContent = data.piattoDelGiorno.descrizione || '';
+          document.getElementById('piatto-giorno').hidden = false;
+        }
+      })
+      .catch(function () { /* nessun dato disponibile, va bene così */ });
+  </script>
+
+</body>
+</html>
