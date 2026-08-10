@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://menny28.github.io/Polleria-Osvaldo/sitemap.xml
