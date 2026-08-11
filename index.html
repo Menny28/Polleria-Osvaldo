@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Polleria — Pollo arrosto e allo spiedo</title>
+  <link rel="icon" href="images/logo.png">
+
+  <meta property="og:title" content="La Polleria — Pollo arrosto e allo spiedo">
+  <meta property="og:description" content="Pollo arrosto e allo spiedo cotto sul fuoco vivo. Asporto, tavoli senza prenotazione e consegna a domicilio. Via P. Sterzi 41.">
+  <meta property="og:image" content="images/pollo-spiedo.jpeg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+  <!-- Barra contatti sempre visibile -->
+  <aside class="info-bar">
+    <div class="logo-badge">
+      <img src="images/logo.png" alt="La Polleria" class="info-logo">
+    </div>
+
+    <a href="tel:+393665488260" class="info-item">
+      <svg viewBox="0 0 24 24" class="info-icon"><path d="M6.6 10.8c1.4 2.8 3.7 5.1 6.5 6.5l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.3 0 .7-.2 1z"/></svg>
+      <span>+39 366 548 8260</span>
+    </a>
+
+    <div class="info-item">
+      <svg viewBox="0 0 24 24" class="info-icon"><path d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 110-6 3 3 0 010 6z"/></svg>
+      <span>Via P. Sterzi 41</span>
+    </div>
+
+    <div class="info-item info-hours">
+      <svg viewBox="0 0 24 24" class="info-icon"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 10.4l4 2.4-.8 1.3-4.6-2.8V6h1.4v6.4z"/></svg>
+      <span>Tutti i giorni 10:00&ndash;19:00<br><em>chiuso il martedì</em></span>
+    </div>
+
+    <a href="tel:+393665488260" class="btn btn-primary info-cta">Chiama ora</a>
+    <a href="https://wa.me/393665488260" target="_blank" rel="noopener" class="btn btn-whatsapp">
+      <svg viewBox="0 0 24 24" class="info-icon whatsapp-icon"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.3c1.5.8 3.1 1.3 4.8 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3C4 14.7 3.6 13.4 3.6 12c0-4.6 3.8-8.4 8.4-8.4s8.4 3.8 8.4 8.4-3.8 8.4-8.4 8.4zm4.6-6.3c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-1 1-1 2.3s1 2.7 1.1 2.9c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.5-.3z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+  </aside>
+
+  <nav class="site-nav">
+    <a href="#menu">Vedi il menù</a>
+    <a href="#componi">Ordina</a>
+    <a href="#negozio">Negozio</a>
+    <a href="#servizi">Come funziona</a>
+    <a href="#contatti">Dove siamo</a>
+  </nav>
+
+  <div class="page">
+
+    <div id="closed-banner" class="closed-banner" hidden>
+      <svg viewBox="0 0 24 24" class="closed-icon"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 10.4l4 2.4-.8 1.3-4.6-2.8V6h1.4v6.4z"/></svg>
+      <span>Oggi siamo chiusi &mdash; riapriamo domani alle 10:00.</span>
+    </div>
+
+    <header class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <div class="logo-badge logo-badge-hero">
+            <img src="images/logo.png" alt="La Polleria" class="hero-logo">
+          </div>
+          <h1>Pollo arrosto e allo spiedo,<br>ogni giorno.</h1>
+          <p class="hero-sub">Cotto lento sul fuoco vivo, come una volta. Da asporto, al tavolo o a casa tua.</p>
+        </div>
+        <div class="hero-photo">
+          <img src="images/pollo-spiedo.jpeg" alt="Pollo allo spiedo sulla brace">
+        </div>
+      </div>
+    </header>
+
+    <div class="skewer-divider" aria-hidden="true">
+      <svg viewBox="0 0 400 24" preserveAspectRatio="none">
+        <line x1="0" y1="12" x2="400" y2="12" class="skewer-rod"></line>
+        <circle cx="60" cy="12" r="9" class="skewer-piece piece-a"></circle>
+        <circle cx="140" cy="12" r="10" class="skewer-piece piece-b"></circle>
+        <circle cx="220" cy="12" r="9" class="skewer-piece piece-a"></circle>
+        <circle cx="300" cy="12" r="10" class="skewer-piece piece-b"></circle>
+        <circle cx="370" cy="12" r="8" class="skewer-piece piece-a"></circle>
+      </svg>
+    </div>
+
+    <main>
+
+      <section id="menu" class="section">
+        <h2>Il menù</h2>
+
+        <div class="menu-tabs" role="tablist">
+          <button class="menu-tab is-active" data-tab="fritti" role="tab">Fritti</button>
+          <button class="menu-tab" data-tab="pollo" role="tab">Pollo</button>
+          <button class="menu-tab" data-tab="panini" role="tab">Panini</button>
+          <button class="menu-tab" data-tab="contorni" role="tab">Contorni</button>
+          <button class="menu-tab" data-tab="bevande" role="tab">Bevande</button>
+        </div>
+
+        <div class="menu-panel is-active" data-panel="fritti">
+          <div class="menu-grid">
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-patatine-fritte.jpg" alt="Patatine fritte">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Patatine fritte</h4><span class="menu-price">2,50 €</span></div>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-mozzarelline.jpg" alt="Mozzarelline fritte">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Mozzarelline fritte <span>8 pezzi</span></h4><span class="menu-price">3,50 €</span></div>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-anelli-cipolla.jpg" alt="Anelli di cipolla">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Anelli di cipolla</h4><span class="menu-price">3 €</span></div>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-nuggets.jpg" alt="Nuggets di pollo">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Nuggets <span>6 pezzi</span></h4><span class="menu-price">3,50 €</span></div>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-alette-paprika.jpg" alt="Alette di pollo alla paprika">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Alette alla paprika <span>4 pezzi</span></h4><span class="menu-price">4,50 €</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-panel" data-panel="pollo">
+          <div class="menu-grid">
+            <div class="menu-item menu-item-photo menu-item-featured">
+              <span class="menu-badge">★ Il più ordinato</span>
+              <img src="images/menu-pollo-intero.jpg" alt="Pollo intero">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Pollo intero <span>+ contorno a scelta</span></h4><span class="menu-price">13 €</span></div>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-mezzo-pollo.jpg" alt="Mezzo pollo">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Mezzo pollo <span>+ contorno a scelta</span></h4><span class="menu-price">7 €</span></div>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-coscia.jpg" alt="Coscia di pollo">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Coscia di pollo <span>+ contorno a scelta</span></h4><span class="menu-price">3,50 €</span></div>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-alette-piccanti.jpg" alt="Alette di pollo piccanti">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Alette piccanti <span>4 pezzi</span></h4><span class="menu-price">4,50 €</span></div>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-straccetti.jpg" alt="Straccetti di pollo">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Straccetti di pollo <span>al limone o alla paprika</span></h4><span class="menu-price">4 €</span></div>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-cotoletta.jpg" alt="Cotoletta">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Cotoletta <span>+ contorno a scelta</span></h4><span class="menu-price">6 €</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-panel" data-panel="panini">
+          <div class="menu-grid">
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-panino-apollo.jpg" alt="Panino Apollo">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Apollo</h4><span class="menu-price">8 €</span></div>
+                <p>Petto di pollo grigliato, bacon, insalata, pomodoro, maionese.</p>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-panino-american.jpg" alt="Panino American">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>American</h4><span class="menu-price">8 €</span></div>
+                <p>Cotoletta, cheddar, cetriolino, salsa cheddar, salsa crispy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-panel" data-panel="contorni">
+          <div class="menu-grid">
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-patate-arrosto.jpg" alt="Patate arrosto">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Patate arrosto</h4><span class="menu-price">2,50 €</span></div>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-patatine-fritte.jpg" alt="Patatine fritte">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Patatine fritte</h4><span class="menu-price">2,50 €</span></div>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-verdure.jpg" alt="Verdure grigliate">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Verdure grigliate <span>a scelta</span></h4><span class="menu-price">2 €</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-panel" data-panel="bevande">
+          <div class="menu-grid">
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-acqua.jpg" alt="Acqua">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Acqua <span>0,5 l</span></h4><span class="menu-price">1 €</span></div>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-bibita-lattina.jpg" alt="Bibita in lattina">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Bibite <span>lattina</span></h4><span class="menu-price">2,50 €</span></div>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-birra-33.jpg" alt="Birra 33cl">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Birra <span>33 cl</span></h4><span class="menu-price">3 €</span></div>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-birra-66.jpg" alt="Birra 66cl">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Birra <span>66 cl</span></h4><span class="menu-price">5 €</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-footer">
+          <p class="menu-note">Il menù può variare leggermente in base alla giornata e alla disponibilità.</p>
+          <div class="menu-footer-actions">
+            <a href="menu-la-polleria.pdf" class="btn btn-ghost-dark" download>Scarica il menù in PDF</a>
+            <div class="qr-box">
+              <div id="qr-code"></div>
+              <p>Inquadra per aprirlo dal telefono</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="skewer-divider" aria-hidden="true">
+        <svg viewBox="0 0 400 24" preserveAspectRatio="none">
+          <line x1="0" y1="12" x2="400" y2="12" class="skewer-rod"></line>
+          <circle cx="60" cy="12" r="9" class="skewer-piece piece-a"></circle>
+          <circle cx="140" cy="12" r="10" class="skewer-piece piece-b"></circle>
+          <circle cx="220" cy="12" r="9" class="skewer-piece piece-a"></circle>
+          <circle cx="300" cy="12" r="10" class="skewer-piece piece-b"></circle>
+          <circle cx="370" cy="12" r="8" class="skewer-piece piece-a"></circle>
+        </svg>
+      </div>
+
+      <section id="componi" class="section section-dark">
+        <h2>Componi il tuo ordine</h2>
+        <p class="componi-intro">Scegli, guarda il totale aggiornarsi, invia su WhatsApp. Pronto in pochi secondi.</p>
+
+        <div class="componi-box">
+
+          <div class="componi-step">
+            <span class="componi-step-label">1. Piatto principale</span>
+            <div class="componi-options" data-group="main" data-required="true"></div>
+          </div>
+
+          <div class="componi-step">
+            <span class="componi-step-label">2. Aggiungi uno sfizio <em>(facoltativo)</em></span>
+            <div class="componi-options" data-group="extra"></div>
+          </div>
+
+          <div class="componi-step">
+            <span class="componi-step-label">3. Aggiungi una bevanda <em>(facoltativo)</em></span>
+            <div class="componi-options" data-group="drink"></div>
+          </div>
+
+          <div class="componi-total">
+            <span>Totale</span>
+            <span id="componi-total-value">0,00 €</span>
+          </div>
+
+          <button id="componi-submit" class="btn btn-whatsapp componi-submit" disabled>
+            <svg viewBox="0 0 24 24" class="info-icon whatsapp-icon"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.3c1.5.8 3.1 1.3 4.8 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3C4 14.7 3.6 13.4 3.6 12c0-4.6 3.8-8.4 8.4-8.4s8.4 3.8 8.4 8.4-3.8 8.4-8.4 8.4zm4.6-6.3c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-1 1-1 2.3s1 2.7 1.1 2.9c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.5-.3z"/></svg>
+            <span>Invia ordine su WhatsApp</span>
+          </button>
+          <p class="componi-hint">Scegli almeno il piatto principale per continuare.</p>
+        </div>
+      </section>
+
+      <div class="skewer-divider" aria-hidden="true">
+        <svg viewBox="0 0 400 24" preserveAspectRatio="none">
+          <line x1="0" y1="12" x2="400" y2="12" class="skewer-rod"></line>
+          <circle cx="60" cy="12" r="9" class="skewer-piece piece-b"></circle>
+          <circle cx="140" cy="12" r="10" class="skewer-piece piece-a"></circle>
+          <circle cx="220" cy="12" r="9" class="skewer-piece piece-b"></circle>
+          <circle cx="300" cy="12" r="10" class="skewer-piece piece-a"></circle>
+          <circle cx="370" cy="12" r="8" class="skewer-piece piece-b"></circle>
+        </svg>
+      </div>
+
+      <section class="section">
+        <h2>Perché sceglierci</h2>
+        <div class="features features-light">
+          <div class="feature">
+            <span class="feature-mark">Fuoco vero</span>
+            <p>Niente forni elettrici: cuociamo su brace viva, ogni giorno.</p>
+          </div>
+          <div class="feature">
+            <span class="feature-mark">Marinatura curata</span>
+            <p>Erbe e aromi selezionati, per un sapore che si riconosce.</p>
+          </div>
+          <div class="feature">
+            <span class="feature-mark">Sempre fresco</span>
+            <p>Cotture scaglionate durante il giorno, mai pollo fermo in vetrina.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section recensioni">
+        <h2>Cosa dicono di noi</h2>
+        <div class="recensioni-grid">
+          <div class="recensione-card">
+            <div class="recensione-stars">★★★★★</div>
+            <p class="recensione-testo">"Pollo allo spiedo pazzesco, si sente che è cotto sul fuoco vero. Ci torno ogni settimana."</p>
+            <span class="recensione-autore">— Marco T., Google</span>
+          </div>
+          <div class="recensione-card">
+            <div class="recensione-stars">★★★★★</div>
+            <p class="recensione-testo">"Panino Apollo top, e la consegna a domicilio è arrivata puntualissima e ancora calda."</p>
+            <span class="recensione-autore">— Giulia R., Google</span>
+          </div>
+          <div class="recensione-card">
+            <div class="recensione-stars">★★★★★</div>
+            <p class="recensione-testo">"Negozio pulito e curato, personale gentile. Le alette alla paprika sono da provare."</p>
+            <span class="recensione-autore">— Davide S., Google</span>
+          </div>
+        </div>
+        <p class="recensioni-nota">Recensioni di esempio — da collegare alle recensioni Google reali dell'attività.</p>
+      </section>
+
+      <section id="negozio" class="section negozio">
+        <div class="negozio-grid">
+          <img src="images/negozio.jpg" alt="Interno del negozio La Polleria, rinnovato" class="negozio-photo">
+          <div class="negozio-text">
+            <h2>Il nostro negozio</h2>
+            <p>Uno spazio nuovo, pensato per accogliere chi passa a trovarci: pulito, curato nei dettagli, con la stessa qualità di sempre nel piatto.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="skewer-divider" aria-hidden="true">
+        <svg viewBox="0 0 400 24" preserveAspectRatio="none">
+          <line x1="0" y1="12" x2="400" y2="12" class="skewer-rod"></line>
+          <circle cx="60" cy="12" r="9" class="skewer-piece piece-a"></circle>
+          <circle cx="140" cy="12" r="10" class="skewer-piece piece-b"></circle>
+          <circle cx="220" cy="12" r="9" class="skewer-piece piece-a"></circle>
+          <circle cx="300" cy="12" r="10" class="skewer-piece piece-b"></circle>
+          <circle cx="370" cy="12" r="8" class="skewer-piece piece-a"></circle>
+        </svg>
+      </div>
+
+      <section id="servizi" class="section section-dark">
+        <h2>Come funziona</h2>
+        <div class="features">
+          <div class="feature">
+            <span class="feature-mark">Asporto</span>
+            <p>Passa a ritirare il tuo ordine, pronto quando dici tu.</p>
+          </div>
+          <div class="feature">
+            <span class="feature-mark">Tavoli</span>
+            <p>Qualche tavolino disponibile sul posto, senza prenotazione.</p>
+          </div>
+          <div class="feature">
+            <span class="feature-mark">A domicilio</span>
+            <p>Consegniamo in paese e nelle zone vicine (+1,50 € sulla consegna).</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contatti" class="section">
+        <h2>Dove siamo</h2>
+        <div class="contatti-grid">
+          <p><strong>Indirizzo</strong><br>Via P. Sterzi 41</p>
+          <p><strong>Telefono</strong><br><a href="tel:+393665488260">+39 366 548 8260</a></p>
+          <p><strong>Orari</strong><br>Tutti i giorni 10:00&ndash;19:00, chiuso il martedì</p>
+        </div>
+        <div class="map-embed">
+          <iframe
+            src="https://www.google.com/maps?q=Via+P.+Sterzi+41&output=embed"
+            width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2026 La Polleria</p>
+    </footer>
+
+  </div>
+
+  <script>
+    (function () {
+      var banner = document.getElementById('closed-banner');
+      var textEl = banner.querySelector('span');
+      var now = new Date();
+      var day = now.getDay();   // 0 domenica ... 1 lunedì, 2 martedì ...
+      var hour = now.getHours();
+      var msg = null;
+
+      if (day === 2) {
+        // Tutto il martedì è chiuso: il giorno dopo (mercoledì) è aperto
+        msg = 'Oggi siamo chiusi \u2014 riapriamo domani alle 10:00.';
+      } else if (hour >= 19) {
+        // Chiusi per oggi: se è lunedì sera, domani (martedì) è chiuso -> si riapre mercoledì
+        msg = (day === 1)
+          ? 'Siamo chiusi \u2014 riapriamo mercoledì alle 10:00.'
+          : 'Siamo chiusi \u2014 riapriamo domani alle 10:00.';
+      } else if (hour < 10) {
+        msg = 'Siamo chiusi \u2014 apriamo oggi alle 10:00.';
+      }
+
+      if (msg) {
+        textEl.textContent = msg;
+        banner.hidden = false;
+      }
+    })();
+  </script>
+
+  <script>
+    (function () {
+      var mains = [
+        { id: 'pollo-intero', name: 'Pollo intero + contorno', price: 13 },
+        { id: 'mezzo-pollo', name: 'Mezzo pollo + contorno', price: 7 },
+        { id: 'coscia', name: 'Coscia di pollo + contorno', price: 3.5 },
+        { id: 'alette-piccanti', name: 'Alette piccanti (4 pz)', price: 4.5 },
+        { id: 'straccetti', name: 'Straccetti di pollo', price: 4 },
+        { id: 'cotoletta', name: 'Cotoletta + contorno', price: 6 },
+        { id: 'apollo', name: 'Panino Apollo', price: 8 },
+        { id: 'american', name: 'Panino American', price: 8 }
+      ];
+      var extras = [
+        { id: 'patatine', name: 'Patatine fritte', price: 2.5 },
+        { id: 'mozzarelline', name: 'Mozzarelline fritte (8 pz)', price: 3.5 },
+        { id: 'anelli', name: 'Anelli di cipolla', price: 3 },
+        { id: 'nuggets', name: 'Nuggets (6 pz)', price: 3.5 },
+        { id: 'alette-paprika', name: 'Alette alla paprika (4 pz)', price: 4.5 }
+      ];
+      var drinks = [
+        { id: 'acqua', name: 'Acqua 0,5 l', price: 1 },
+        { id: 'bibita', name: 'Bibita in lattina', price: 2.5 },
+        { id: 'birra33', name: 'Birra 33 cl', price: 3 },
+        { id: 'birra66', name: 'Birra 66 cl', price: 5 }
+      ];
+
+      var selected = { main: null, extra: null, drink: null };
+
+      function fmt(n) {
+        return n.toFixed(2).replace('.', ',') + ' €';
+      }
+
+      function renderGroup(groupName, items) {
+        var container = document.querySelector('.componi-options[data-group="' + groupName + '"]');
+        items.forEach(function (item) {
+          var btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'componi-pill';
+          btn.textContent = item.name + ' — ' + fmt(item.price);
+          btn.addEventListener('click', function () {
+            var alreadySelected = selected[groupName] === item.id;
+            selected[groupName] = alreadySelected ? null : item.id;
+            container.querySelectorAll('.componi-pill').forEach(function (b) { b.classList.remove('is-selected'); });
+            if (!alreadySelected) { btn.classList.add('is-selected'); }
+            updateTotal();
+          });
+          container.appendChild(btn);
+        });
+      }
+
+      function findItem(list, id) {
+        for (var i = 0; i < list.length; i++) { if (list[i].id === id) return list[i]; }
+        return null;
+      }
+
+      function updateTotal() {
+        var total = 0;
+        var m = findItem(mains, selected.main);
+        var e = findItem(extras, selected.extra);
+        var d = findItem(drinks, selected.drink);
+        if (m) total += m.price;
+        if (e) total += e.price;
+        if (d) total += d.price;
+
+        document.getElementById('componi-total-value').textContent = fmt(total);
+
+        var submit = document.getElementById('componi-submit');
+        var hint = document.querySelector('.componi-hint');
+        if (m) {
+          submit.disabled = false;
+          hint.hidden = true;
+        } else {
+          submit.disabled = true;
+          hint.hidden = false;
+        }
+      }
+
+      renderGroup('main', mains);
+      renderGroup('extra', extras);
+      renderGroup('drink', drinks);
+      updateTotal();
+
+      document.getElementById('componi-submit').addEventListener('click', function () {
+        var m = findItem(mains, selected.main);
+        var e = findItem(extras, selected.extra);
+        var d = findItem(drinks, selected.drink);
+        if (!m) return;
+
+        var lines = ['Ciao! Vorrei ordinare:', '- ' + m.name];
+        if (e) lines.push('- ' + e.name);
+        if (d) lines.push('- ' + d.name);
+        var total = m.price + (e ? e.price : 0) + (d ? d.price : 0);
+        lines.push('Totale: ' + fmt(total));
+
+        var url = 'https://wa.me/393665488260?text=' + encodeURIComponent(lines.join('\n'));
+        window.open(url, '_blank');
+      });
+    })();
+  </script>
+
+  <script>
+    (function () {
+      var tabs = document.querySelectorAll('.menu-tab');
+      var panels = document.querySelectorAll('.menu-panel');
+      tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          var target = tab.getAttribute('data-tab');
+          tabs.forEach(function (t) { t.classList.remove('is-active'); });
+          panels.forEach(function (p) { p.classList.remove('is-active'); });
+          tab.classList.add('is-active');
+          document.querySelector('.menu-panel[data-panel="' + target + '"]').classList.add('is-active');
+        });
+      });
+    })();
+  </script>
+
+  <script>
+    if (window.QRCode && document.getElementById('qr-code')) {
+      new QRCode(document.getElementById('qr-code'), {
+        text: 'https://menny28.github.io/Polleria-Osvaldo/#menu',
+        width: 120,
+        height: 120,
+        colorDark: '#2B1B12',
+        colorLight: '#FBF3E7'
+      });
+    }
+  </script>
+
+</body>
+</html>
