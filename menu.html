@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menù — La Polleria</title>
+  <link rel="icon" href="images/logo.png">
+
+  <meta property="og:title" content="Menù — La Polleria">
+  <meta property="og:description" content="Il menù completo de La Polleria: fritti, pollo, panini, contorni e bevande. Aggiungi al carrello e ordina su WhatsApp.">
+  <meta property="og:image" content="images/pollo-spiedo.jpeg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+  <!-- Barra contatti sempre visibile -->
+  <aside class="info-bar">
+    <div class="logo-badge">
+      <img src="images/logo.png" alt="La Polleria" class="info-logo">
+    </div>
+
+    <a href="tel:+393665488260" class="info-item">
+      <svg viewBox="0 0 24 24" class="info-icon"><path d="M6.6 10.8c1.4 2.8 3.7 5.1 6.5 6.5l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.3 0 .7-.2 1z"/></svg>
+      <span>+39 366 548 8260</span>
+    </a>
+
+    <div class="info-item">
+      <svg viewBox="0 0 24 24" class="info-icon"><path d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 110-6 3 3 0 010 6z"/></svg>
+      <span>Via P. Sterzi 41</span>
+    </div>
+
+    <div class="info-item info-hours">
+      <svg viewBox="0 0 24 24" class="info-icon"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 10.4l4 2.4-.8 1.3-4.6-2.8V6h1.4v6.4z"/></svg>
+      <span>Tutti i giorni 10:00&ndash;19:00<br><em>chiuso il martedì</em></span>
+    </div>
+
+    <a href="tel:+393665488260" class="btn btn-primary info-cta">Chiama ora</a>
+    <a href="https://wa.me/393665488260" target="_blank" rel="noopener" class="btn btn-whatsapp">
+      <svg viewBox="0 0 24 24" class="info-icon whatsapp-icon"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.3c1.5.8 3.1 1.3 4.8 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3C4 14.7 3.6 13.4 3.6 12c0-4.6 3.8-8.4 8.4-8.4s8.4 3.8 8.4 8.4-3.8 8.4-8.4 8.4zm4.6-6.3c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-1 1-1 2.3s1 2.7 1.1 2.9c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.5-.3z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+  </aside>
+
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="menu.html" class="is-current">Vedi il menù</a>
+    <a href="ordina.html">Ordina</a>
+    <a href="negozio.html">Negozio</a>
+    <a href="contatti.html">Dove siamo</a>
+  </nav>
+
+  <div class="page">
+
+    <div id="closed-banner" class="closed-banner" hidden>
+      <svg viewBox="0 0 24 24" class="closed-icon"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 10.4l4 2.4-.8 1.3-4.6-2.8V6h1.4v6.4z"/></svg>
+      <span>Oggi siamo chiusi &mdash; riapriamo domani alle 10:00.</span>
+    </div>
+
+    <main>
+
+      <section id="menu" class="section">
+        <h2>Il menù</h2>
+
+        <div class="special-callout">
+          <svg viewBox="0 0 24 24" class="closed-icon"><path d="M6.6 10.8c1.4 2.8 3.7 5.1 6.5 6.5l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.3 0 .7-.2 1z"/></svg>
+          <span>Abbiamo spesso <strong>piatti speciali e fuori menù</strong> — chiamaci al <a href="tel:+393665488260">+39 366 548 8260</a> o vieni a trovarci per scoprirli.</span>
+        </div>
+
+        <div class="menu-tabs" role="tablist">
+          <button class="menu-tab is-active" data-tab="fritti" role="tab">Fritti</button>
+          <button class="menu-tab" data-tab="pollo" role="tab">Pollo</button>
+          <button class="menu-tab" data-tab="panini" role="tab">Panini</button>
+          <button class="menu-tab" data-tab="contorni" role="tab">Contorni</button>
+          <button class="menu-tab" data-tab="bevande" role="tab">Bevande</button>
+        </div>
+
+        <div class="menu-panel is-active" data-panel="fritti">
+          <div class="menu-grid">
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-patatine-fritte.jpg" alt="Patatine fritte">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Patatine fritte</h4><span class="menu-price">2.5 €</span></div>
+                <button class="add-cart-btn" data-id="patatine" data-name="Patatine fritte" data-price="2.50">+ Aggiungi</button>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-mozzarelline.jpg" alt="Mozzarelline fritte">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Mozzarelline fritte <span>8 pezzi</span></h4><span class="menu-price">3.5 €</span></div>
+                <button class="add-cart-btn" data-id="mozzarelline" data-name="Mozzarelline fritte 8 pezzi" data-price="3.50">+ Aggiungi</button>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-anelli-cipolla.jpg" alt="Anelli di cipolla">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Anelli di cipolla</h4><span class="menu-price">3.0 €</span></div>
+                <button class="add-cart-btn" data-id="anelli" data-name="Anelli di cipolla" data-price="3.00">+ Aggiungi</button>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-nuggets.jpg" alt="Nuggets di pollo">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Nuggets <span>6 pezzi</span></h4><span class="menu-price">3.5 €</span></div>
+                <button class="add-cart-btn" data-id="nuggets" data-name="Nuggets 6 pezzi" data-price="3.50">+ Aggiungi</button>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-alette-piccanti.jpg" alt="Alette di pollo alla paprika">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Alette fritte alla paprika <span>4 pezzi</span></h4><span class="menu-price">4.5 €</span></div>
+                <button class="add-cart-btn" data-id="alette-paprika" data-name="Alette fritte alla paprika 4 pezzi" data-price="4.50">+ Aggiungi</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-panel" data-panel="pollo">
+          <div class="menu-grid">
+            <div class="menu-item menu-item-photo menu-item-featured">
+              <span class="menu-badge">★ Il più ordinato</span>
+              <img src="images/menu-pollo-intero.jpg" alt="Pollo intero">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Pollo intero <span>+ contorno a scelta</span></h4><span class="menu-price">13.0 €</span></div>
+                <button class="add-cart-btn" data-id="pollo-intero" data-name="Pollo intero + contorno a scelta" data-price="13.00">+ Aggiungi</button>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-mezzo-pollo.jpg" alt="Mezzo pollo">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Mezzo pollo <span>+ contorno a scelta</span></h4><span class="menu-price">7.0 €</span></div>
+                <button class="add-cart-btn" data-id="mezzo-pollo" data-name="Mezzo pollo + contorno a scelta" data-price="7.00">+ Aggiungi</button>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-coscia.jpg" alt="Coscia di pollo">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Coscia di pollo <span>+ contorno a scelta</span></h4><span class="menu-price">3.5 €</span></div>
+                <button class="add-cart-btn" data-id="coscia" data-name="Coscia di pollo + contorno a scelta" data-price="3.50">+ Aggiungi</button>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-alette-paprika.jpg" alt="Alette di pollo piccanti">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Alette piccanti <span>4 pezzi</span></h4><span class="menu-price">4.5 €</span></div>
+                <button class="add-cart-btn" data-id="alette-piccanti" data-name="Alette piccanti 4 pezzi" data-price="4.50">+ Aggiungi</button>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-straccetti.jpg" alt="Straccetti di pollo">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Straccetti di pollo <span>al limone o alla paprika</span></h4><span class="menu-price">4.0 €</span></div>
+                <button class="add-cart-btn" data-id="straccetti" data-name="Straccetti di pollo al limone o alla paprika" data-price="4.00">+ Aggiungi</button>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-cotoletta.jpg" alt="Cotoletta">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Cotoletta <span>+ contorno a scelta</span></h4><span class="menu-price">6.0 €</span></div>
+                <button class="add-cart-btn" data-id="cotoletta" data-name="Cotoletta + contorno a scelta" data-price="6.00">+ Aggiungi</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-panel" data-panel="panini">
+          <div class="menu-grid">
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-panino-apollo.jpg" alt="Panino Apollo">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Apollo</h4><span class="menu-price">8.0 €</span></div>
+                <p>Pollo sfilacciato, rucola fresca e salsa leggermente piccante al pomodoro, in pane ciabatta croccante.</p>
+                <button class="add-cart-btn" data-id="apollo" data-name="Apollo" data-price="8.00">+ Aggiungi</button>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-panino-american.jpg" alt="Panino American">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>American</h4><span class="menu-price">8.0 €</span></div>
+                <p>Cotoletta di pollo croccante, lattuga fresca, pomodoro e salsa cremosa, in morbido pane baguette.</p>
+                <button class="add-cart-btn" data-id="american" data-name="American" data-price="8.00">+ Aggiungi</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-panel" data-panel="contorni">
+          <div class="menu-grid">
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-patate-arrosto.jpg" alt="Patate arrosto">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Patate arrosto</h4><span class="menu-price">2.5 €</span></div>
+                <button class="add-cart-btn" data-id="patate-arrosto" data-name="Patate arrosto" data-price="2.50">+ Aggiungi</button>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-patatine-fritte.jpg" alt="Patatine fritte">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Patatine fritte</h4><span class="menu-price">2.5 €</span></div>
+                <button class="add-cart-btn" data-id="patatine" data-name="Patatine fritte" data-price="2.50">+ Aggiungi</button>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-verdure.jpg" alt="Verdure grigliate">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Verdure grigliate <span>a scelta</span></h4><span class="menu-price">2.0 €</span></div>
+                <button class="add-cart-btn" data-id="verdure" data-name="Verdure grigliate a scelta" data-price="2.00">+ Aggiungi</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-panel" data-panel="bevande">
+          <div class="menu-grid">
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-acqua.jpg" alt="Acqua">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Acqua <span>0,5 l</span></h4><span class="menu-price">1.0 €</span></div>
+                <button class="add-cart-btn" data-id="acqua" data-name="Acqua 0,5 l" data-price="1.00">+ Aggiungi</button>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-bibita-lattina.jpg" alt="Bibita in lattina">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Bibite <span>lattina</span></h4><span class="menu-price">2.5 €</span></div>
+                <button class="add-cart-btn" data-id="bibita" data-name="Bibite lattina" data-price="2.50">+ Aggiungi</button>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-birra-33.jpg" alt="Birra 33cl">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Birra <span>33 cl</span></h4><span class="menu-price">3.0 €</span></div>
+                <button class="add-cart-btn" data-id="birra33" data-name="Birra 33 cl" data-price="3.00">+ Aggiungi</button>
+              </div>
+            </div>
+            <div class="menu-item menu-item-photo">
+              <img src="images/menu-birra-66.jpg" alt="Birra 66cl">
+              <div class="menu-item-body">
+                <div class="menu-item-head"><h4>Birra <span>66 cl</span></h4><span class="menu-price">5.0 €</span></div>
+                <button class="add-cart-btn" data-id="birra66" data-name="Birra 66 cl" data-price="5.00">+ Aggiungi</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-footer">
+          <p class="menu-note">Il menù può variare leggermente in base alla giornata e alla disponibilità.</p>
+          <div class="menu-footer-actions">
+            <a href="menu-la-polleria.pdf" class="btn btn-ghost-dark" download>Scarica il menù in PDF</a>
+            <div class="qr-box">
+              <div id="qr-code"></div>
+              <p>Inquadra per aprirlo dal telefono</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="skewer-divider" aria-hidden="true">
+        <svg viewBox="0 0 400 24" preserveAspectRatio="none">
+          <line x1="0" y1="12" x2="400" y2="12" class="skewer-rod"></line>
+          <circle cx="60" cy="12" r="9" class="skewer-piece piece-a"></circle>
+          <circle cx="140" cy="12" r="10" class="skewer-piece piece-b"></circle>
+          <circle cx="220" cy="12" r="9" class="skewer-piece piece-a"></circle>
+          <circle cx="300" cy="12" r="10" class="skewer-piece piece-b"></circle>
+          <circle cx="370" cy="12" r="8" class="skewer-piece piece-a"></circle>
+        </svg>
+      </div>
+
+      <section class="section">
+        <p class="menu-cta-note">Hai già scelto? <a href="ordina.html">Vai al tuo ordine &rarr;</a></p>
+      </section>
+
+    </main>
+    <footer>
+      <p>&copy; 2026 La Polleria</p>
+    </footer>
+
+  </div>
+
+  <div id="photo-modal" class="photo-modal" hidden>
+    <div class="photo-modal-backdrop"></div>
+    <div class="photo-modal-box">
+      <button id="photo-modal-close" class="photo-modal-close" aria-label="Chiudi">&times;</button>
+      <img id="photo-modal-img" src="" alt="">
+      <div class="photo-modal-body">
+        <h3 id="photo-modal-title"></h3>
+        <p id="photo-modal-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="cart.js"></script>
+  <script src="script.js"></script>
+  <script src="menu.js"></script>
+
+</body>
+</html>
